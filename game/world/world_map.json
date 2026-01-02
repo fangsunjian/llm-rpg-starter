@@ -1,0 +1,97 @@
+{
+  "world_id": "W001",
+  "name": "灰雾北境",
+  "seed": 123456,
+  "nodes": [
+    {
+      "id": "T001",
+      "type": "town",
+      "name": "石津镇",
+      "region": "Northvale",
+      "pos": [
+        12,
+        7
+      ],
+      "summary": "河港贸易小镇，雾常年不散。",
+      "links": [
+        "R001",
+        "R002"
+      ],
+      "state": {
+        "discovered": true,
+        "danger_nearby": 2
+      }
+    },
+    {
+      "id": "T002",
+      "type": "town",
+      "name": "风栈堡",
+      "region": "Northvale",
+      "pos": [
+        5,
+        10
+      ],
+      "summary": "驿路要塞，巡逻队驻扎，规矩森严。",
+      "links": [
+        "R001"
+      ],
+      "state": {
+        "discovered": false,
+        "danger_nearby": 1
+      }
+    },
+    {
+      "id": "D001",
+      "type": "dungeon",
+      "name": "苔墓地穴",
+      "region": "Northvale",
+      "pos": [
+        14,
+        8
+      ],
+      "summary": "被苔藓吞噬的古墓，传闻有会说话的棺木。",
+      "links": [
+        "R002"
+      ],
+      "state": {
+        "discovered": false,
+        "cleared": false,
+        "danger": 3
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "R001",
+      "from": "T001",
+      "to": "T002",
+      "kind": "road",
+      "distance": 18,
+      "tags": [
+        "trade",
+        "patrolled"
+      ],
+      "state": {
+        "blocked": false
+      }
+    },
+    {
+      "id": "R002",
+      "from": "T001",
+      "to": "D001",
+      "kind": "trail",
+      "distance": 6,
+      "tags": [
+        "foggy",
+        "beasts"
+      ],
+      "state": {
+        "blocked": false
+      }
+    }
+  ],
+  "time": {
+    "day": 1,
+    "clock": "08:30"
+  }
+}

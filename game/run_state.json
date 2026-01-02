@@ -1,0 +1,15 @@
+{
+  "session_id": "S0001",
+  "world_id": "W001",
+  "location": {
+    "scope": "world",
+    "node_id": "T001",
+    "subnode_id": "gate_north"
+  },
+  "time": {
+    "day": 1,
+    "clock": "08:30"
+  },
+  "last_action": null,
+  "pending": []
+}
