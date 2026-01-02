@@ -2,7 +2,7 @@
   "session_id": "S0001",
   "world_id": "W001",
   "location": {
-    "scope": "world",
+    "scope": "town",
     "node_id": "T001",
     "subnode_id": "gate_north"
   },
